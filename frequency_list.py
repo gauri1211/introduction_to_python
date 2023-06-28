@@ -15,6 +15,17 @@ for i in mylist:
     continue  
 print(l1)   
 #iteration,check the frequecy,print
-for j in  mylist:
-    frequency_=mylist.count(j)
-    print("frequency_ of {}is {}".format(j,frequency_))
+#for j in  mylist:
+ #   frequency_=mylist.count(j)
+
+for k in l1:
+  temp=k
+  count=0
+  for _ in mylist:
+    if _==temp:
+      count+=1
+    else:
+      continue
+  print("frequency of {} is {}".format(temp,count))
+
+   
